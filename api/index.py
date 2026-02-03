@@ -21,7 +21,7 @@ def extraer():
         return jsonify({"status": "error", "detalle": "Faltan datos"}), 400
 
     # URL ORIGINAL DEL SAT
-    url_sat = f"https://siat.sat.gob.mx/app/qr/faces/pages/mobile/validadorqr.jsf?p1={idcif}&p2={rfc}"
+    url_sat = f"https://siat.sat.gob.mx/app/qr/faces/pages/mobile/validadorqr.jsf?D1=10&D2=1&D3=22020213087_GUCK920822MB3"
     
     # --- CONFIGURACIÓN DEL PUENTE (CORS-ANYWHERE / PROXY) ---
     # Usamos un servicio de proxy para que Vercel no se bloquee con el SSL del SAT
